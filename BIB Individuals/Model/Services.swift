@@ -1,0 +1,13 @@
+//
+//  Services.swift
+//  BIB Individuals
+//
+//  Created by Mahmoud Sherbeny on 12/09/2021.
+//
+
+import Foundation
+
+struct Service {
+    let serviceID: String
+    let serviceName: String
+}
