@@ -22,7 +22,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     
     @IBOutlet weak var btnMainLogin: UIButton!
-    @IBOutlet weak var btnFBLogin: UIButton!
+    @IBOutlet weak var btnFBLogin: ISRadioButton!
     @IBOutlet weak var btnGoogleLogin: UIButton!
     
     //MARK: - variable
@@ -65,8 +65,11 @@ class LoginVC: UIViewController {
         self.btnGoogleLogin.setTitleColor(DesignSystem.Colors.white.color, for: .normal)
         
         self.btnMainLogin.backgroundColor = DesignSystem.Colors.primary.color
-        self.btnFBLogin.backgroundColor = DesignSystem.Colors.primary.color
+//        self.btnFBLogin.backgroundColor = DesignSystem.Colors.primary.color
         self.btnGoogleLogin.backgroundColor = DesignSystem.Colors.primary.color
+        
+        self.btnFBLogin.icon = #imageLiteral(resourceName: "uncheck")
+        self.btnFBLogin.setIconSelected = #imageLiteral(resourceName: "check")
         
         //Fonts
         self.lblLangauge.font = DesignSystem.TypoGraphy.description.font
@@ -87,6 +90,21 @@ class LoginVC: UIViewController {
         self.btnMainLogin.layer.cornerRadius = 16
         self.btnFBLogin.layer.cornerRadius = 16
         self.btnGoogleLogin.layer.cornerRadius = 16
+        
+        self.lblWelcomeTitle.setActivePart(orignalText: "Hello Mahmoud World!", hyberText: ["Mahmoud", "World"], hyberTextColor: ["119AE8", "119AE8"], hyberTextFont: [DesignSystem.TypoGraphy.header.font, DesignSystem.TypoGraphy.title.font])
+        
+        let gesture = MyTapGesture(target:self, action: #selector(self.tapLabel(_:)))
+        self.lblWelcomeTitle.addGestureRecognizer(gesture)
+    }
+    
+    @objc func tapLabel(_ gesture: MyTapGesture) {
+        let tappedTextPart = ("Hello Mahmoud World!" as NSString).range(of: "Mahmoud")
+        let tappedWordTextPart = ("Hello Mahmoud World!" as NSString).range(of: "World")
+        if gesture.didTapAttributedTextInLabel(label: self.lblWelcomeTitle, inRange: tappedTextPart) {
+            print("Tapped")
+        } else if gesture.didTapAttributedTextInLabel(label: self.lblWelcomeTitle, inRange: tappedWordTextPart) {
+            print("Printed")
+        }
     }
     
     private func checkVaildaiton() {
@@ -114,8 +132,8 @@ class LoginVC: UIViewController {
         self.checkVaildaiton()
     }
     
-    @IBAction func fbLoginTapped(_ sender: Any) {
-        //TODO: - FB Login Integrate
+    @IBAction func fbLoginTapped(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
     }
     
     @IBAction func googleLoginTapped(_ sender: UIButton) {
