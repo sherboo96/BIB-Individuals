@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="BIB_Individuals" customModuleProvider="target">
             <connections>
-                <outlet property="btnFBLogin" destination="bxP-il-1RI" id="zmM-cb-iYe"/>
+                <outlet property="btnFBLogin" destination="bxP-il-1RI" id="HTb-YJ-vo7"/>
                 <outlet property="btnGoogleLogin" destination="r4v-Hv-Fey" id="dnF-eI-ZNH"/>
                 <outlet property="btnMainLogin" destination="x8r-Xz-a0T" id="Scn-68-eVu"/>
                 <outlet property="lblCreateAccount" destination="hA5-aX-PVN" id="qG5-Qp-MnS"/>
@@ -139,17 +139,21 @@
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iR3-dF-UBf">
                             <rect key="frame" x="0.0" y="80" width="374" height="60"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxP-il-1RI">
+                                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxP-il-1RI" customClass="ISRadioButton" customModule="BIB_Individuals" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="177" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="60" id="BLv-5D-Az4"/>
                                     </constraints>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="Login With  " image="square.and.arrow.down" catalog="system">
+                                    <state key="normal">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="iconSquare" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="iconOnRight" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
                                     <connections>
-                                        <action selector="fbLoginTapped:" destination="-1" eventType="touchUpInside" id="t2n-wA-86h"/>
+                                        <action selector="fbLoginTapped:" destination="-1" eventType="touchUpInside" id="Sc3-fm-wBJ"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4v-Hv-Fey">
@@ -197,6 +201,11 @@
             <point key="canvasLocation" x="35" y="104"/>
         </view>
     </objects>
+    <designables>
+        <designable name="bxP-il-1RI">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>

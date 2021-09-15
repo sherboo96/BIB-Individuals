@@ -41,9 +41,16 @@
 		1E0FBF7A26EE569E00FDB1EB /* ServicesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FBF7926EE569E00FDB1EB /* ServicesServices.swift */; };
 		1E0FBF7E26EE592D00FDB1EB /* ServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FBF7C26EE592D00FDB1EB /* ServicesCell.swift */; };
 		1E0FBF7F26EE592D00FDB1EB /* ServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E0FBF7D26EE592D00FDB1EB /* ServicesCell.xib */; };
+		1EC727F426F2513B00483BBB /* LabelEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC727F326F2513B00483BBB /* LabelEx.swift */; };
+		1EC727F626F251F700483BBB /* TapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC727F526F251F700483BBB /* TapGestureRecognizer.swift */; };
+		1EC727F826F2538A00483BBB /* ColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC727F726F2538A00483BBB /* ColorEx.swift */; };
+		1EC727FD26F262EA00483BBB /* ButtonEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC727FC26F262EA00483BBB /* ButtonEx.swift */; };
+		A1610AAC56DB7D3685BE732F /* Pods_BIB_Individuals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90EBCF316505CD0DFA4C357 /* Pods_BIB_Individuals.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1336438C9740FD1550D34F82 /* Pods-BIB Individuals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIB Individuals.debug.xcconfig"; path = "Target Support Files/Pods-BIB Individuals/Pods-BIB Individuals.debug.xcconfig"; sourceTree = "<group>"; };
+		1AFCF557896C52E8FBB7A228 /* Pods-BIB Individuals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BIB Individuals.release.xcconfig"; path = "Target Support Files/Pods-BIB Individuals/Pods-BIB Individuals.release.xcconfig"; sourceTree = "<group>"; };
 		1E0FBF1126EE235C00FDB1EB /* BIB Individuals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BIB Individuals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0FBF1426EE235C00FDB1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E0FBF1D26EE236300FDB1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +91,11 @@
 		1E0FBF7926EE569E00FDB1EB /* ServicesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesServices.swift; sourceTree = "<group>"; };
 		1E0FBF7C26EE592D00FDB1EB /* ServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCell.swift; sourceTree = "<group>"; };
 		1E0FBF7D26EE592D00FDB1EB /* ServicesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesCell.xib; sourceTree = "<group>"; };
+		1EC727F326F2513B00483BBB /* LabelEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelEx.swift; sourceTree = "<group>"; };
+		1EC727F526F251F700483BBB /* TapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureRecognizer.swift; sourceTree = "<group>"; };
+		1EC727F726F2538A00483BBB /* ColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEx.swift; sourceTree = "<group>"; };
+		1EC727FC26F262EA00483BBB /* ButtonEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEx.swift; sourceTree = "<group>"; };
+		B90EBCF316505CD0DFA4C357 /* Pods_BIB_Individuals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BIB_Individuals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1610AAC56DB7D3685BE732F /* Pods_BIB_Individuals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +116,7 @@
 				1E0FBF1326EE235C00FDB1EB /* BIB Individuals */,
 				1E0FBF1226EE235C00FDB1EB /* Products */,
 				3C8EEF19250C620B0A1D0BE8 /* Pods */,
+				7261EFEDBA051C76A0DF0760 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,9 +183,9 @@
 		1E0FBF2C26EE239700FDB1EB /* Extenations */ = {
 			isa = PBXGroup;
 			children = (
-				1E0FBF3126EE288600FDB1EB /* CollectionView.swift */,
-				1E0FBF5B26EE38EA00FDB1EB /* StringEx.swift */,
-				1E0FBF6026EE3B7700FDB1EB /* AlertController.swift */,
+				1EC727FB26F25F3B00483BBB /* Properety */,
+				1EC727FA26F25F3100483BBB /* DataType */,
+				1EC727F926F25F2300483BBB /* Views */,
 			);
 			path = Extenations;
 			sourceTree = "<group>";
@@ -304,11 +318,49 @@
 			path = SevicesCCell;
 			sourceTree = "<group>";
 		};
+		1EC727F926F25F2300483BBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E0FBF6026EE3B7700FDB1EB /* AlertController.swift */,
+				1E0FBF3126EE288600FDB1EB /* CollectionView.swift */,
+				1EC727F326F2513B00483BBB /* LabelEx.swift */,
+				1EC727FC26F262EA00483BBB /* ButtonEx.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1EC727FA26F25F3100483BBB /* DataType */ = {
+			isa = PBXGroup;
+			children = (
+				1E0FBF5B26EE38EA00FDB1EB /* StringEx.swift */,
+			);
+			path = DataType;
+			sourceTree = "<group>";
+		};
+		1EC727FB26F25F3B00483BBB /* Properety */ = {
+			isa = PBXGroup;
+			children = (
+				1EC727F726F2538A00483BBB /* ColorEx.swift */,
+				1EC727F526F251F700483BBB /* TapGestureRecognizer.swift */,
+			);
+			path = Properety;
+			sourceTree = "<group>";
+		};
 		3C8EEF19250C620B0A1D0BE8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				1336438C9740FD1550D34F82 /* Pods-BIB Individuals.debug.xcconfig */,
+				1AFCF557896C52E8FBB7A228 /* Pods-BIB Individuals.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7261EFEDBA051C76A0DF0760 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B90EBCF316505CD0DFA4C357 /* Pods_BIB_Individuals.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +370,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E0FBF2526EE236300FDB1EB /* Build configuration list for PBXNativeTarget "BIB Individuals" */;
 			buildPhases = (
+				0C23EEAB00A18119B2DB2EE6 /* [CP] Check Pods Manifest.lock */,
 				1E0FBF0D26EE235C00FDB1EB /* Sources */,
 				1E0FBF0E26EE235C00FDB1EB /* Frameworks */,
 				1E0FBF0F26EE235C00FDB1EB /* Resources */,
+				8C3000A948C9F182363B7A39 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,14 +432,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C23EEAB00A18119B2DB2EE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BIB Individuals-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C3000A948C9F182363B7A39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BIB Individuals/Pods-BIB Individuals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BIB Individuals/Pods-BIB Individuals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BIB Individuals/Pods-BIB Individuals-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1E0FBF0D26EE235C00FDB1EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1E0FBF4F26EE2C9000FDB1EB /* DesignSystem.swift in Sources */,
+				1EC727F626F251F700483BBB /* TapGestureRecognizer.swift in Sources */,
 				1E0FBF5E26EE3A1700FDB1EB /* Messages.swift in Sources */,
 				1E0FBF7026EE546300FDB1EB /* HomePresenter.swift in Sources */,
+				1EC727F826F2538A00483BBB /* ColorEx.swift in Sources */,
 				1E0FBF7226EE547600FDB1EB /* HomeInteractor.swift in Sources */,
 				1E0FBF7626EE548B00FDB1EB /* HomeProtocal.swift in Sources */,
 				1E0FBF6726EE45F600FDB1EB /* CustomTabBarController.swift in Sources */,
@@ -394,6 +492,8 @@
 				1E0FBF5826EE2F3100FDB1EB /* TypoGraphy.swift in Sources */,
 				1E0FBF1526EE235C00FDB1EB /* AppDelegate.swift in Sources */,
 				1E0FBF3426EE28C300FDB1EB /* UserInfo.swift in Sources */,
+				1EC727F426F2513B00483BBB /* LabelEx.swift in Sources */,
+				1EC727FD26F262EA00483BBB /* ButtonEx.swift in Sources */,
 				1E0FBF4126EE29AB00FDB1EB /* LoginPresenter.swift in Sources */,
 				1E0FBF6D26EE543900FDB1EB /* HomeVC.swift in Sources */,
 				1E0FBF3E26EE299900FDB1EB /* LoginVC.swift in Sources */,
@@ -547,6 +647,7 @@
 		};
 		1E0FBF2626EE236300FDB1EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1336438C9740FD1550D34F82 /* Pods-BIB Individuals.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -566,6 +667,7 @@
 		};
 		1E0FBF2726EE236300FDB1EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AFCF557896C52E8FBB7A228 /* Pods-BIB Individuals.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
